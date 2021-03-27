@@ -1,6 +1,6 @@
 # ParticleNN-Raspi4
 
-** See the Wiki for complete details as to what this prject is! **
+**See the Wiki for complete details as to what this prject is!
 
 Instructions for Raspberry pi 4
 
