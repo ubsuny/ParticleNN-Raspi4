@@ -1,5 +1,7 @@
 # ParticleNN-Raspi4
 
+** See the Wiki for complete details as to what this prject is! **
+
 Instructions for Raspberry pi 4
 
 To get this project running on a raspberry pi 4, you need to have Jupiter notebooks installed, python 3 (complete with Matplotlib and Numpy modules), TensorFlow, as well as a Raspbin OS. You will need a raspberry pi 4, its power supply cord, an ethernet cable and the necessary adaptors to fit the other end into your computer, a SD card and an SD card reader.
