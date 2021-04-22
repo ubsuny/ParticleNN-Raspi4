@@ -15,9 +15,9 @@ def ParticleNet(Train,TrainValues,Test):
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
               
-    model.fit(Train, TrainValues, epochs=10)
+    model.fit(Train, TrainValues, epochs=3)
     
-    test_loss, test_acc = model.evaluate(Train, TrainValues, verbose=2)
+    test_loss, test_acc = model.evaluate(Train,TrainValues)
 
     print('\nTest accuracy:', test_acc)
     
