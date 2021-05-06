@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-def ParticleNet(Train,TrainValues,Test):
+def ParticleNet(Train,TrainValues,Test,Epochs):
     '''Particle Neural Network: Accepts Training Data, Training Values, and Test Data.'''
 
     class_names = ['Expodential','Normal']
@@ -15,7 +15,7 @@ def ParticleNet(Train,TrainValues,Test):
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
               
-    model.fit(Train, TrainValues, epochs=3)
+    model.fit(Train, TrainValues, epochs=Epochs)
     
     test_loss, test_acc = model.evaluate(Train,TrainValues)
 
