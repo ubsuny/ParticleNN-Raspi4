@@ -13,10 +13,6 @@ def Adversary(train, train_vals, test, test_vals, Epochs):
         print(inputs)
     
         x = tf.keras.layers.concatenate(inputs = [*inputs], axis=-1, name = 'concat')
-
-    
-        print(x)
-    
         x = tf.keras.layers.Conv1D(64, 3, padding = 'same', activation='relu', name = 'conv1')(x)
         x = tf.keras.layers.Conv1D(64, 1, padding = 'same', activation='relu', name = 'conv2')(x)
         x = tf.keras.layers.Conv1D(32, 3, padding = 'same', activation='relu', name = 'conv3')(x)
